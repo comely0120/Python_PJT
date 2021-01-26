@@ -1,12 +1,13 @@
 """ 파이썬 데이터 타입 종류
 1.Boolean : 1 TRUE, 0 FALSE
 2.Numbers
-3.String
+3.String : 문자열(시퀀스)
 4.Bytes
-5.Lists : ❤❤
+5.Lists : 리스트(시퀀스) ❤❤
 6.Tuples : 
 7.Sets : 집합
-8.Dictionaries : ❤❤
+8.Dictionaries : 사전 ❤❤
+9.Tuple : 튜플(시퀀스)
 """
 
 dict1 = {
@@ -42,3 +43,7 @@ print(n,m)
 import math
 print(math.ceil(5.1)) #6
 print(math.floor(5.1)) #5
+
+
+# 그 밖에 함수는 아래 URL 보고 계속 공부하자!!
+# https://docs.python.org/3/library/math.html
