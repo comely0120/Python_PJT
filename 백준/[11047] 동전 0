@@ -1,0 +1,20 @@
+coin_cnt, money = map(int,input().split())
+coin_list = []
+total_coin = 0
+    
+for i in range(coin_cnt):
+    coin_list.append(int(input()))
+
+coin_list.sort(reverse=True)
+#print(coin_list,type(coin_list))
+
+
+for coin in coin_list:
+    if coin > money:
+        pass
+    else:
+        coin_num = money // coin
+        total_coin += coin_num
+        money -= coin_num*coin
+
+print(total_coin)
