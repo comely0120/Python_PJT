@@ -95,3 +95,8 @@ print(" \t\t 즉, 3개의 stock_num값이 동일")
 print(user1.stock_num)
 print(user2.stock_num)
 print(Warehouse.stock_num)
+
+
+del user1
+
+print(user2.stock_num)

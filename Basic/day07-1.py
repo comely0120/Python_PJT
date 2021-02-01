@@ -21,11 +21,11 @@ hello(param1)
 
 # 예제2
 def hello_return(world):
-    value = "Hello, " + str(world)
+    value = "Hello, " + world
     return value
 
 
-str = hello_return("Niceman")
+str = hello_return("Comely")
 
 print(str)
 
@@ -58,7 +58,7 @@ print(type(tup), tup, list(tup))
 
 
 # 리스트 리턴
-def func_mul2(x):
+def func_mul3(x):
     y1 = x * 2
     y2 = x * 4
     y3 = x * 6
@@ -71,14 +71,14 @@ print(type(lis), lis, set(lis))
 
 
 # 딕셔너리 리턴
-def func_mul3(x):
+def func_mul4(x):
     y1 = x * 2
     y2 = x * 4
     y3 = x * 6
     return {'ret1': y1, 'ret2': y2, 'ret3': y3}
 
 
-dic = func_mul3(8)
+dic = func_mul4(8)
 
 print(type(dic), dic, dic.get('ret3'), dic.items(), dic.keys(), dic.values())
 
