@@ -1,0 +1,14 @@
+N = int(input())
+data_N = set(map(int,input().split()))
+M = int(input())
+data_M = list(map(int,input().split()))
+result = []
+
+for i in data_M:
+    if i in data_N :
+        print('1')
+    else :
+        print('0')
+        
+# data_N 은 검사하기 위한 배열이기 때문에 list보단 set이 효율적!!!!
+# 같은 수를 여러번 검사할 필요없으니까!!!
