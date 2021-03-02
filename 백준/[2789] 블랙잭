@@ -1,0 +1,12 @@
+N,M = list(map(int, input().split(' ')))
+data = list(map(int, input().split(' ')))
+result = 0
+l =len(data)
+for i in range(0,l):
+    for j in range(i+1,l):
+        for k in range(j+1,l):
+            sum_value = data[i]+data[j]+data[k]
+            if sum_value <=M:
+                result = max(result,sum_value)
+                
+print(result)
