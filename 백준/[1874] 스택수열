@@ -1,0 +1,20 @@
+n = int(input()) # 수열의 대상 
+
+count = 1
+stack = []
+result = []
+
+for i in range(1, n+1): # 둘째 줄부터 n개의 줄에는 수열을 이루는 1이상 n이하의 정수가 하나씩 순서대로 주어진다. 
+    data = int(input())
+    while count <= data: # 입력받은 데이터에 도달할때까지 삽입
+        stack.append(count)
+        count += 1
+        result.append('+')
+    if stack[-1] == data:
+        stack.pop()
+        result.append('-')
+    else: # 내림차순이 아닐때
+        print('NO')
+        exit(0)
+
+print('\n'.join(result))
