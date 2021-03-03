@@ -1,0 +1,11 @@
+test_case = int(input)
+array = []
+
+for _ in range(1, test_case+1):
+    data = input().split(' ')
+    array.append( (int(data[0]), data[1]))
+
+array = sorted(array, key=lambda x : x[0])
+
+for i in array:
+    print(i[0],i[1])
